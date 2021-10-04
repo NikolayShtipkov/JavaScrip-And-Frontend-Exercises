@@ -5,6 +5,8 @@
     </head>
     <body>
         <div>
+            <a href="./index.html">Best Manga</a>
+            <a href="./table.html">Manga Statistics</a>
             <h1>Best Manga</h1>
             <p>Testing HTML5, so here is my favourite manga...<em>just cuz</em></p>
             <ul>
@@ -12,6 +14,80 @@
               <li><a href="#vagabond">Vagabond</a></li>
               <li><a href="#jojo">JoJo's Bizzare Adventure</a></li>   
             </ul>
+            <form action="submission" method="POST">
+                <h4>Log in for more<h4>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" value="username">
+                <label for="userpass">Password:</label>
+                <input type="password" name="userpass" id="userpass" value="password">
+                <br><br>
+                <label for="amount">Manga red</label>
+                <br>
+                <input id="amount" name="amount" type="number" step="1">
+                <br><br>
+                <label id="interest">How much are you into Manga</label>
+                <br>
+                <span>Meh</span>
+                <input id="interest" name="interest" type="range" min="0" max="4" step="0.5">
+                <span>A lot</span>
+                <br><br>
+                <section class="interests">
+                    <span>Check your interests</span>
+                    <br>
+                    <label for="manga-interest">Manga</label>
+                    <input id="manga-interest" name="interest" type="checkbox" value="manga-interest">
+                    <label for="anime-interest">Anime</label>
+                    <input id="anime-interest" name="interest" type="checkbox" value="anime-interest">
+                    <label for="game-interest">Games</label>
+                    <input id="game-interest" name="interest" type="checkbox" value="game-interest">
+                </section>
+                <br><br>
+                <section class="japaneseCar">
+                    <span>Which of the following is the most apealing to you</span>
+                    <br>
+                    <input id="mitsubishi" type="radio" name="jdm" value="mitsubishi">
+                    <label for="mitsubishi">Mitsubishi</label>
+                    <input id="subaru" type="radio" name="jdm" value="subaru">
+                    <label for="subaru">Subaru</label>
+                    <input id="honda" type="radio" name="jdm" value="honda">
+                    <label for="honda">Honda</label>
+                </section>
+                <br><br>
+                <section class="food-dropdown">
+                    <label for="food">What is your favourite food ?</label>
+                    <select name="food" id="food">
+                        <option value="pizza">Pizza</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="rice">Rice</option>
+                        <option value="soup">Soup</option>
+                        <option value="salad">Salad</option>
+                    </select>
+                </section>
+                <br><br>
+                <section class="where-from">
+                    <label for="city">Where are you from ?</label><br>
+                    <input type="text" id="city" list="cities" name="city">
+                    
+                    <datalist id="cities">
+                        <option value="Plovdiv"></option>
+                        <option value="Sofia"></option>
+                        <option value="Haskovo"></option>
+                        <option value="Tokyo"></option>
+                    </datalist>
+                </section>
+                <br>
+                <section class="adittional-info">
+                    <label for="info">Anything else you want to share ?</label>
+                    <br>
+                    <textarea name="info" id="info" cols="30" rows="5">Write it down here</textarea>
+                </section>
+                <section class="submission">
+                    <input type="submit">
+                </section>
+            </form>
+            <!--I'm playing around way too much here-->
+            <br>
+            <p>Well this is a manga webpage, if you don't know what manga is <a href="https://en.wikipedia.org/wiki/Manga" target="_blank">here</a>, thank me later.</p>
         </div>
         <div id="berserk">
             <h2>Berserk</h2>
@@ -25,7 +101,15 @@
                Setting out on a dreadful quest riddled with misfortune, <br>
                Guts, armed with a massive sword and monstrous strength, will let nothing stop him, not even death itself,<br>
                until he is finally able to take the head of the one who stripped him—and his loved one—of their humanity.</p>
-               <img src="Images/157897l.jpg" alt="Protaganist with huge sword and crossbow"/>
+            <a href="https://myanimelist.net/manga/2/Berserk" target="_blank"><img src="Images/157897l.jpg" alt="Protaganist with huge sword and crossbow"/></a>
+            <p><em>Click image to view in myanimelist.</em></p>
+            <h3>About the author</h3>
+            <p><strong>Kentaro Miura</strong> (三浦 建太郎, Miura Kentarō, July 11, 1966 – May 6, 2021) was a Japanese manga artist.<br> 
+               He was best known for his acclaimed dark fantasy series Berserk, which began serialization in 1989 and continued until his death.<br> 
+               As of 2021, Berserk had more than 50 million copies in circulation, making it one of the best-selling manga series of all time.<br>
+               In 2002, Miura received the Award for Excellence at the 6th Tezuka Osamu Cultural Prizes.
+               More about him <a href="https://en.wikipedia.org/wiki/Kentaro_Miura" target="_blank">right here</a>.<br>
+               <em>Rest in piece and thank you for everything</em></p>
         </div>
         <div id="vagabond">
             <h2>Vagabond</h2>
@@ -44,16 +128,28 @@
                <em>Vagabond</em> is the fictitious retelling of the life of one of Japan's most renowned swordsmen,<br> 
                the "Sword Saint" Musashi Miyamoto—his rise from a swordsman with no desire other than to become <em>"Invincible Under the Heavens"</em><br>
                to an enlightened warrior who slowly learns of the importance of close friends, self-reflection, and life itself.</p>
-               <img src="Images/181787l.jpg" alt="young Shinmen Takezou"/>
+            <a href="https://myanimelist.net/manga/656/Vagabond?q=vag&cat=manga" target="_blank"><img src="Images/181787l.jpg" alt="young Shinmen Takezou"/></a>
+            <p><em>Click image to view in myanimelist.</em></p>
+            <h3>About the author</h3>
+            <p>Takehiko Inoue (井上 雄彦, Inoue Takehiko, born 12 January 1967) is a Japanese manga artist.<br> 
+               He is best known for the basketball series Slam Dunk (1990–1996), and the jidaigeki manga Vagabond, which are two of the best-selling manga series in history.<br> 
+               Many of his works are about basketball, Inoue himself being a huge fan of the sport.
+               More about the artist can be found <a href="https://en.wikipedia.org/wiki/Takehiko_Inoue" target="_blank">here</a></p>
         </div>
         <div id="jojo">
             <h2>Jojo's Bizzare Adventure</h2>
             <p>Story and art by th one and only Hirohiko Araki</p>
             <h3>Sypnosis</h3>
-            <p>The story of the Joestar family, who are possessed with intense psychic strength,<br>
+            <p>The story of the <strong>Joestar</strong> family, who are possessed with intense psychic strength,<br>
                and the adventures each member encounters throughout their lives. Chronicles the struggles of the cursed Joestar bloodline<br>
                against the forces of evil. Each part follows the story of a protaganist carring the JoJo nickname.</p>
-            <img src="Images/461421.jpg" alt="All Jojo protaganists" width="640" height="410"/>
+            <a href="https://myanimelist.net/manga/1517/JoJo_no_Kimyou_na_Bouken_Part_1__Phantom_Blood" target="_blank"><img src="Images/461421.jpg" alt="All Jojo protaganists" width="640" height="410"/></a>
+            <p><em>Click image to view in myanimelist.</em></p>
+            <h3>About the author</h3>
+            <p>Hirohiko Araki (荒木 飛呂彦, Araki Hirohiko, born June 7, 1960) is a Japanese manga artist. He is best known for his long-running series JoJo's Bizarre Adventure,<br>
+               which was first published in Weekly Shōnen Jump in 1987 and has sold over 100 million copies as of 2016 in Japan alone.<br> 
+               The series is known for frequent references to Western rock music, fashion, and Italy, all of which Araki is reportedly very fond of.
+               Again if you want to know more <a href="https://en.wikipedia.org/wiki/Hirohiko_Araki" target="_blank">here you go</a></p>
         </div>
     </body>
 </html>
